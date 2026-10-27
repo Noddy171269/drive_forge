@@ -44,19 +44,6 @@ export default function Login() {
         <h1>Welcome back</h1>
         <p className="sub">Sign in to your cloud drive</p>
 
-        <div className="demo-fills">
-          {DEMOS.map((d) => (
-            <button
-              key={d.email}
-              type="button"
-              className="btn btn-sm"
-              onClick={() => fillDemo(d.email)}
-            >
-              Use {d.label}
-            </button>
-          ))}
-        </div>
-
         {error && <div className="error-banner">{error}</div>}
 
         <form onSubmit={submit}>
@@ -86,6 +73,20 @@ export default function Login() {
             {busy ? 'Signing in…' : 'Sign in'}
           </button>
         </form>
+
+        <div className="demo-hint">
+          <span>Try a demo account</span>
+          {DEMOS.map((d) => (
+            <button
+              key={d.email}
+              type="button"
+              className="demo-chip"
+              onClick={() => fillDemo(d.email)}
+            >
+              {d.label}
+            </button>
+          ))}
+        </div>
 
         <div className="switch-line">
           No account? <Link to="/register">Create one</Link>

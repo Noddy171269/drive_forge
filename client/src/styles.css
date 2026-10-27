@@ -206,11 +206,28 @@ label.field > span {
   font-weight: 800;
   box-shadow: 0 6px 16px rgba(108, 92, 231, 0.4);
 }
-.demo-fills {
+.demo-hint {
   display: flex;
-  gap: 8px;
-  margin-bottom: 18px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-size: 13px;
+  color: var(--text-faint);
   flex-wrap: wrap;
+}
+.demo-chip {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 999px;
+  transition: background 0.14s;
+}
+.demo-chip:hover {
+  background: var(--accent-soft);
 }
 .error-banner {
   background: var(--danger-soft);
