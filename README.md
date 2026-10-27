@@ -11,6 +11,23 @@ The engineering focus is the backend: **per-resource authorization**,
 
 ---
 
+## 🚀 Live demo
+
+| | URL |
+|---|---|
+| **App (Vercel)** | **https://drive-forge.vercel.app** |
+| **API (Render)** | https://drive-forge-1drn.onrender.com |
+
+**Demo login** (password `password123`): `alice@example.com` — or click **Use Alice**
+on the login page.
+
+> The backend runs on Render's free tier, which **sleeps after ~15 min idle**, so
+> the first request may take 30–60s to wake. The free-tier filesystem is also
+> **ephemeral**, so files uploaded in production are cleared on restart/redeploy
+> (metadata persists) — production would use S3 (see [Future work](#future-work)).
+
+---
+
 ## Table of contents
 - [Architecture](#architecture)
 - [Data models](#data-models)
