@@ -15,11 +15,12 @@ The engineering focus is the backend: **per-resource authorization**,
 
 | | URL |
 |---|---|
+| 🎥 **Demo video** | **https://drive.google.com/file/d/1djD87OF_AWBwnKjsA74KxJ3-PAUIxhii/view?usp=sharing** |
 | **App (Vercel)** | **https://drive-forge.vercel.app** |
 | **API (Render)** | https://drive-forge-1drn.onrender.com |
 
-**Demo login** (password `password123`): `alice@example.com` — or click **Use Alice**
-on the login page.
+**Demo login** (password `password123`): `alice@example.com` — or use the **Alice**
+demo-account chip on the login page.
 
 > The backend runs on Render's free tier, which **sleeps after ~15 min idle**, so
 > the first request may take 30–60s to wake. The free-tier filesystem is also
